@@ -1,0 +1,30 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/*colors*/
+.color-primary{
+    color: blueviolet;
+}
+.color-secondary{
+    color: rgb(106, 106, 106);
+}
+.bg-primary{
+    background-color: #f8f9fa;
+}
+/* typography */
+.big-title{
+    font-size: 72px;
+    font-weight: bold;
+
+}
+/* nav bar */
+.nav-link:hover{
+    color: blueviolet !important;
+}
+.nav-link.active {
+    color: blueviolet !important;
+    font-weight: bold !important;
+}
+.brand-text:hover{
+    color: blueviolet;
+}
