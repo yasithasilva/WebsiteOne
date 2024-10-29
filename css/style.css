@@ -59,6 +59,7 @@ body {
     display: inline-block;
     position: relative;
     transition: all .5s ease;
+    z-index: 99;
   }
   
   .hbtn--action span:before{
@@ -88,3 +89,14 @@ body {
     transform: translateY(5px);
   }
     
+  .feature-card{
+    background-color: #d7d1ff;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+  .feature-card h1{
+    font-size: 18px;
+    font-weight: bold;
+    
+  }
