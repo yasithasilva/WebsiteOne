@@ -3,7 +3,7 @@ body {
 }
 /*colors*/
 .color-primary{
-    color: blueviolet;
+    color: rgb(98, 43, 226);
 }
 .color-secondary{
     color: rgb(106, 106, 106);
@@ -28,3 +28,197 @@ body {
 .brand-text:hover{
     color: blueviolet;
 }
+.hbtn {
+    padding: 15px;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    transition: all .5s ease; 
+  }
+
+  .hbtn--action{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: #f6e58d;
+    color: rgb(26, 26, 26);
+    transition: all .5s ease 0s; 
+    box-shadow: 0 10px #f9ca24;
+  }
+  
+  /* .btn--action:hover{
+  box-shadow: inset 0 0 0 .25rem #ffbe76;
+  } */
+  .hbtn--action:hover{
+  color: blueviolet !important;
+  }
+  
+  .hbtn--action span{
+    display: inline-block;
+    position: relative;
+    transition: all .5s ease;
+    z-index: 99;
+  }
+  
+  .hbtn--action span:before{
+    content: '\f103'; 
+    color: blueviolet;
+    font-size: 1.75rem;
+    font-family: FontAwesome;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 1.5rem;
+    opacity: 0;
+    transition: all .1s ease 0s;
+  }
+  
+  .hbtn--action:hover span{
+    padding-left: 2rem; 
+  }
+  
+  .hbtn--action:hover span:before{
+    left: 0;
+    opacity: 1;
+  }
+  
+  .hbtn--action:active {
+    box-shadow: 0 5px #f0932b;
+    transform: translateY(5px);
+  }
+    
+  .feature-card{
+    background-color: #d7d1ff;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+    height: auto;
+  }
+  .feature-card h1{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .testimonial{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+  .testimonial h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  .testimonial span{
+    font-size: 14px;
+  }
+  .testimonial p {
+    font-size: 12px;
+    margin-top: 1rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .footer-note{
+    font-size: 11px;
+    font-weight: 300;
+    margin-top: 0.5rem;
+  }
+  
+  /* For medium screens (md) and smaller */
+  @media (max-width: 992px) { /* Adjusts for md and below */
+    .testimonial p {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  
+  /* For small screens (sm) and smaller */
+  @media (max-width: 768px) { /* Adjusts for sm and below */
+    .testimonial p {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  /*logo slider styles  */
+  .logocontainer {
+    overflow: hidden;
+    .slider {
+      animation: slidein 30s linear infinite;
+      white-space: nowrap;
+      .logos {
+        width: 100%;
+        display: inline-block;
+        margin: 0px 0;
+        .fab {
+          width: calc(100% / 5);
+          animation: fade-in 0.5s 
+            cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+        }
+      }
+    }
+  }
+  
+  @keyframes slidein {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* gradient card styles*/
+  .gradient-section {
+    margin-top: 1rem;
+    position: relative;
+    height: 240px; /* Adjust height as needed */
+    color: #ffffff; /* White text color for contrast */
+    display: flex;
+    align-items: flex-end; /* Aligns the text to the bottom */
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  .gradientcard1{
+    background-image: url(../assets/img/sample1.png); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  .gradientoverlay {
+    border-radius: 1rem;
+    position: absolute;
+    top: 200;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Positions text at the bottom */
+    padding: 1rem;
+  }
+  
+  .gradientcardcaption {
+    font-size: 18px; /* Adjust caption size */
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .gradientcardtext {
+    font-size: 12px; /* Adjust paragraph size */
+    margin: 0;
+  }
+  
+  
