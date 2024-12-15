@@ -191,8 +191,41 @@ body {
     border-radius: 1rem;
     cursor: pointer;
   }
+  .modal-body{
+    background-color: #e4e4e4 !important;
+  }
   .gradientcard1{
     background-image: url(../assets/img/sample1.png); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  .project-coast-thumbnail{
+    background-image: url(../assets/img/project-coast/thumbnail.png); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  .frostyfest-thumbnail{
+    background-image: url(../assets/img/frosty-fest/thumbnail.png); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  .spandana-thumbnail{
+    background-image: url(../assets/img/spandana/thumbnail.png); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  .hirustar-thumbnail{
+    background-image: url(../assets/img/hirustar/thumbnail.png); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  .cworks-thumbnail{
+    background-image: url(../assets/img/cworks/Advanced\ Automotive\ Technology\ \(1\).png); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  .nsbm-thumbnail{
+    background-image: url(../assets/img/nsbm/thumbnail.jpg); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
   }
