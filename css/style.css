@@ -229,6 +229,11 @@ body {
     background-size: cover;
     background-position: center;
   }
+  .secvision-thumbnail{
+    background-image: url(../assets/img/secvision/thumbnail.jpg); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+  }
   .gradientoverlay {
     border-radius: 1rem;
     position: absolute;
