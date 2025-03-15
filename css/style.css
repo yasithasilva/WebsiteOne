@@ -1,272 +1,301 @@
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
+
+.btn:focus,
+.btn:focus-visible {
+  background-color: #e3e3e3 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 0.2rem rgba(246, 82, 82, 0.5) !important; /* Change outline color */
+}
+.btn:hover {
+  background-color: #db4949 !important;
+}
+.btn-outline-primary {
+  color: #292929 !important;
+  border: 1.5px solid #ff5e5e !important; /* Ensure a visible border */
+}
+
+.btn-outline-primary:focus {
+  color: #ff5e5e !important;
+  box-shadow: 0 0 0 3px rgba(255, 94, 94, 0.5) !important; /* Create a visible outline effect */
+  border-color: #ff5e5e !important; /* Change border color on focus */
+}
+
+.btn-outline-primary:hover {
+  color: #ff5e5e !important;
+  background-color: #eaeaea !important;
+}
+
 /*colors*/
-.color-primary{
-    color: #0d6efd;
+.color-primary {
+  color: #ff5e5e;
 }
-.color-secondary{
-    color: rgb(106, 106, 106);
+.color-secondary {
+  color: rgb(106, 106, 106);
 }
-.bg-primary{
-    background-color: #f8f9fa;
+.bg-primary {
+  background-color: #f8f9fa;
 }
 /* typography */
-.big-title{
-    font-size: 72px;
-    font-weight: bold;
-
+.big-title {
+  font-size: 64px;
+  font-weight: bold;
 }
 /* nav bar */
-.nav-link:hover{
-    color:#0d6efd !important;
+.nav-link:hover {
+  color: #ff5e5e !important;
 }
 .nav-link.active {
-    color: #0d6efd !important;
-    font-weight: bold !important;
+  color: #ff5e5e !important;
+  font-weight: bold !important;
 }
-.brand-text:hover{
-    color: #0d6efd;
+/* .navbar {
+  border-bottom: 3px solid #ffaeae;
+  box-shadow: 0 4px 6px rgba(68, 68, 68, 0.1); 
+} */
+.brand-text:hover {
+  color: #ff5e5e;
 }
 .hbtn {
-    padding: 15px;
-    font-weight: 700;
-    font-size: 2rem;
-    text-decoration: none;
-    text-align: center;
-    transition: all .5s ease; 
-  }
+  padding: 15px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.5s ease;
+}
 
-  .hbtn--action{
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    background-color: #f6e58d;
-    color: rgb(26, 26, 26);
-    transition: all .5s ease 0s; 
-    box-shadow: 0 10px #f9ca24;
-  }
-  
-  /* .btn--action:hover{
+.hbtn--action {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background-color: #f6e58d;
+  color: rgb(26, 26, 26);
+  transition: all 0.5s ease 0s;
+  box-shadow: 0 10px #f9ca24;
+}
+
+/* .btn--action:hover{
   box-shadow: inset 0 0 0 .25rem #ffbe76;
   } */
-  .hbtn--action:hover{
-  color:#0d6efd !important;
-  }
-  
-  .hbtn--action span{
-    display: inline-block;
-    position: relative;
-    transition: all .5s ease;
-    z-index: 99;
-  }
-  
-  .hbtn--action span:before{
-    content: '\f103'; 
-    color:#0d6efd;
-    font-size: 1.75rem;
-    font-family: FontAwesome;
-    display: inline-block;
-    position: absolute;
-    top: 5px;
-    left: 1.5rem;
-    opacity: 0;
-    transition: all .1s ease 0s;
-  }
-  
-  .hbtn--action:hover span{
-    padding-left: 2rem; 
-  }
-  
-  .hbtn--action:hover span:before{
-    left: 0;
-    opacity: 1;
-  }
-  
-  .hbtn--action:active {
-    box-shadow: 0 5px #f0932b;
-    transform: translateY(5px);
-  }
-    
-  .feature-card{
-    background-color: #d1f0ff;
-    border-radius: 1rem;
-    padding: 1rem;
-    margin-top: 1.5rem;
-    padding-top: 2rem;
-    height: auto;
-  }
-  .feature-card h1{
-    font-size: 18px;
-    font-weight: bold;
-  }
-  .testimonial{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    align-items: center;
-    text-align: center;
-  }
-  .testimonial h4{
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 1rem;
-  }
-  .testimonial span{
-    font-size: 14px;
-  }
+.hbtn--action:hover {
+  color: #ff5e5e !important;
+}
+
+.hbtn--action span {
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s ease;
+  z-index: 99;
+}
+
+.hbtn--action span:before {
+  content: "\f103";
+  color: #ff5e5e;
+  font-size: 1.75rem;
+  font-family: FontAwesome;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 1.5rem;
+  opacity: 0;
+  transition: all 0.1s ease 0s;
+}
+
+.hbtn--action:hover span {
+  padding-left: 2rem;
+}
+
+.hbtn--action:hover span:before {
+  left: 0;
+  opacity: 1;
+}
+
+.hbtn--action:active {
+  box-shadow: 0 5px #f0932b;
+  transform: translateY(5px);
+}
+
+.feature-card {
+  /* background-color: #e9e9e9; */
+  border: 1px solid #909090;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 2rem;
+  height: 100%;
+}
+.feature-card h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  text-align: center;
+}
+.testimonial h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.testimonial span {
+  font-size: 14px;
+}
+.testimonial p {
+  font-size: 12px;
+  margin-top: 1rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.footer-note {
+  font-size: 11px;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+
+/* For medium screens (md) and smaller */
+@media (max-width: 992px) {
+  /* Adjusts for md and below */
   .testimonial p {
-    font-size: 12px;
-    margin-top: 1rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  .footer-note{
-    font-size: 11px;
-    font-weight: 300;
-    margin-top: 0.5rem;
+}
+
+/* For small screens (sm) and smaller */
+@media (max-width: 768px) {
+  /* Adjusts for sm and below */
+  .testimonial p {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  
-  /* For medium screens (md) and smaller */
-  @media (max-width: 992px) { /* Adjusts for md and below */
-    .testimonial p {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-  }
-  
-  /* For small screens (sm) and smaller */
-  @media (max-width: 768px) { /* Adjusts for sm and below */
-    .testimonial p {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-  }
-  /*logo slider styles  */
-  .logocontainer {
-    overflow: hidden;
-    .slider {
-      animation: slidein 30s linear infinite;
-      white-space: nowrap;
-      .logos {
-        width: 100%;
-        display: inline-block;
-        margin: 0px 0;
-        .fab {
-          width: calc(100% / 5);
-          animation: fade-in 0.5s 
-            cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
-        }
+}
+/*logo slider styles  */
+.logocontainer {
+  overflow: hidden;
+  .slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap;
+    .logos {
+      width: 100%;
+      display: inline-block;
+      margin: 0px 0;
+      .fab {
+        width: calc(100% / 5);
+        animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
       }
     }
   }
-  
-  @keyframes slidein {
-    from {
-      transform: translate3d(0, 0, 0);
-    }
-    to {
-      transform: translate3d(-100%, 0, 0);
-    }
-  }
-  
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+}
 
-  /* gradient card styles*/
-  .gradient-section {
-    margin-top: 1rem;
-    position: relative;
-    height: 240px; /* Adjust height as needed */
-    color: #ffffff; /* White text color for contrast */
-    display: flex;
-    align-items: flex-end; /* Aligns the text to the bottom */
-    border-radius: 1rem;
-    cursor: pointer;
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
   }
-  .modal-body{
-    background-color: #e4e4e4 !important;
+  to {
+    transform: translate3d(-100%, 0, 0);
   }
-  .gradientcard1{
-    background-image: url(../assets/img/sample1.png); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
   }
-  .project-coast-thumbnail{
-    background-image: url(../assets/img/project-coast/thumbnail.png); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
+  100% {
+    opacity: 1;
   }
-  .frostyfest-thumbnail{
-    background-image: url(../assets/img/frosty-fest/thumbnail.png); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-  }
-  .spandana-thumbnail{
-    background-image: url(../assets/img/spandana/thumbnail.png); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-  }
-  .hirustar-thumbnail{
-    background-image: url(../assets/img/hirustar/thumbnail.png); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-  }
-  .cworks-thumbnail{
-    background-image: url(../assets/img/cworks/Advanced\ Automotive\ Technology\ \(1\).png); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-  }
-  .nsbm-thumbnail{
-    background-image: url(../assets/img/nsbm/thumbnail.jpg); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-  }
-  .secvision-thumbnail{
-    background-image: url(../assets/img/secvision/thumbnail.jpg); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-  }
-  .gradientoverlay {
-    border-radius: 1rem;
-    position: absolute;
-    top: 200;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0));
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Positions text at the bottom */
-    padding: 1rem;
-  }
-  
-  .gradientcardcaption {
-    font-size: 18px; /* Adjust caption size */
-    font-weight: 500;
-    margin: 0;
-  }
-  
-  .gradientcardtext {
-    font-size: 12px; /* Adjust paragraph size */
-    margin: 0;
-  }
-  .section-space{
-    margin-top: 72px !important;
-  }
-  .portfolio-caption{
-    font-size: 24px;
-    font-weight: 500;
-  }
-  .border-bootom{
-    border-bottom: 1px solid gray; /* Adds the 1px gray border */
-   
-  }
-  
+}
+
+/* gradient card styles*/
+.gradient-section {
+  margin-top: 1rem;
+  position: relative;
+  height: 240px; /* Adjust height as needed */
+  color: #ffffff; /* White text color for contrast */
+  display: flex;
+  align-items: flex-end; /* Aligns the text to the bottom */
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.modal-body {
+  background-color: #e4e4e4 !important;
+}
+.gradientcard1 {
+  background-image: url(../assets/img/sample1.png); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+.project-coast-thumbnail {
+  background-image: url(../assets/img/project-coast/thumbnail.png); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+.frostyfest-thumbnail {
+  background-image: url(../assets/img/frosty-fest/thumbnail.png); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+.spandana-thumbnail {
+  background-image: url(../assets/img/spandana/thumbnail.png); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+.hirustar-thumbnail {
+  background-image: url(../assets/img/hirustar/thumbnail.png); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+.cworks-thumbnail {
+  background-image: url(../assets/img/cworks/Advanced\Automotive\Technology\1\.png); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+.nsbm-thumbnail {
+  background-image: url(../assets/img/nsbm/thumbnail.jpg); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+.secvision-thumbnail {
+  background-image: url(../assets/img/secvision/thumbnail.jpg); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+}
+.gradientoverlay {
+  border-radius: 1rem;
+  position: absolute;
+  top: 200;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Positions text at the bottom */
+  padding: 1rem;
+}
+
+.gradientcardcaption {
+  font-size: 18px; /* Adjust caption size */
+  font-weight: 500;
+  margin: 0;
+}
+
+.gradientcardtext {
+  font-size: 12px; /* Adjust paragraph size */
+  margin: 0;
+}
+.section-space {
+  margin-top: 72px !important;
+}
+.portfolio-caption {
+  font-size: 24px;
+  font-weight: 500;
+}
+.border-bootom {
+  border-bottom: 1px solid gray; /* Adds the 1px gray border */
+}
